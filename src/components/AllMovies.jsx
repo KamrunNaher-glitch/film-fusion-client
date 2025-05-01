@@ -5,7 +5,7 @@ const AllMovies = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/movies')
+    fetch('https://film-fusion-server.vercel.app/movies')
       .then(res => res.json())
       .then(data => setMovies(data));
   }, []);

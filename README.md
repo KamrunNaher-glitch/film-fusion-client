@@ -1,12 +1,36 @@
-# React + Vite
+# 🎬 Film Fusion – Movie Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Site:** https://film-fusion-6367d.web.app/
 
-Currently, two official plugins are available:
+Film Fusion is a modern web application that lets users explore, add, update, and manage a list of movies with rich details and user-friendly interfaces.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🎞️ Browse a collection of movies with posters, genres, duration, ratings, and release years.
+- 🔍 Search and sort movies by name, genre, and rating.
+- 📝 Perform full CRUD operations (Add, Update, Delete movies).
+- ⭐ Highlight the top 6 highest-rated movies in a featured section.
+- ❤️ Manage a private “Favorite Movies” list (only accessible when logged in).
+- 📄 View detailed movie information on a separate route.
+- ⚠️ SweetAlert integration for delete confirmations and success messages.
+- 🧭 Smooth navigation using React Router DOM.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React, Tailwind CSS, DaisyUI, SweetAlert2
+- **Routing:** React Router DOM
+- **Backend:** Node.js, Express.js, MongoDB
+- **Deployment:** Netlify (frontend), Render / Vercel / Railway (backend)
+
+---
+
+## 📦 Installation & Setup
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/your-username/film-fusion.git
+   cd film-fusion

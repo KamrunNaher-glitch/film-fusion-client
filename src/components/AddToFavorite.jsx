@@ -14,7 +14,7 @@ const AddToFavorite = ({ movie, userEmail, setFavorites }) => {
       rating: movie.rating,
     };
 
-    fetch('http://localhost:5000/favorites', {
+    fetch('https://film-fusion-server.vercel.app/favorites', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ const AddToFavorite = ({ movie, userEmail, setFavorites }) => {
             text: 'Movie has been added to Favorites!',
           }).then(() => {
             // Fetch updated favorites after adding a movie
-            fetch(`http://localhost:5000/favorites?email=${userEmail}`)
+            fetch(`https://film-fusion-server.vercel.app/favorites?email=${userEmail}`)
               .then((res) => res.json())
               .then((data) => {
                 setFavorites(data); // Update the state with the new favorites list

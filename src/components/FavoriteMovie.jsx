@@ -15,7 +15,7 @@ const FavoriteMovies = () => {
 
   useEffect(() => {
     // Fetch favorites from the server when the component mounts
-    fetch(`http://localhost:5000/favorites?email=${userEmail}`)
+    fetch(`https://film-fusion-server.vercel.app/favorites?email=${userEmail}`)
       .then((res) => res.json())
       .then((data) => setFavorites(data));
   }, [userEmail]);

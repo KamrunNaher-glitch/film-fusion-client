@@ -14,7 +14,7 @@ const AddMovie = () => {
         const poster = form.poster.value;
         const newMovie = {title,genre,duration,releaseYear,rating,summary,poster}
         console.log(newMovie);
-        fetch('http://localhost:5000/movies',{
+        fetch('https://film-fusion-server.vercel.app/movies',{
             method: 'POST',
             headers:{
                 'content-type':'application/json'

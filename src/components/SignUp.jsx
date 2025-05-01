@@ -25,7 +25,7 @@ const SignUp = () => {
                 console.log('User created at FB', result.user);
                 const createdAt = result?.user?.metadata?.creationTime;
                 const newUser = {name,email,createdAt}
-                fetch('http://localhost:5000/users',{
+                fetch('https://film-fusion-server.vercel.app/users',{
                   method:'POST',
                   headers:{
                     'content-type': 'application/json'

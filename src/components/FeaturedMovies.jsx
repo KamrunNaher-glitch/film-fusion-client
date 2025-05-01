@@ -6,7 +6,7 @@ const FeaturedMovies = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('http://localhost:5000/movies')
+        fetch('https://film-fusion-server.vercel.app/movies')
             .then(res => res.json())
             .then(data => {
                 // Sort movies by rating (high to low)

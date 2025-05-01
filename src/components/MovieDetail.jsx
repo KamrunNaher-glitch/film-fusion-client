@@ -6,7 +6,7 @@ const MovieDetail = () => {
   const [movie, setMovie] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/movies/${id}`)
+    fetch(`https://film-fusion-server.vercel.app/movies/${id}`)
       .then(res => res.json())
       .then(data => setMovie(data));
   }, [id]);

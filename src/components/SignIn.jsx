@@ -18,7 +18,7 @@ const SignIn = () => {
                 const lastSignInTime
                 = result?.user?.metadata?.lastSignInTime;
                 const loginfo = {email,lastSignInTime};
-                fetch(`http://localhost:5000/users`,{
+                fetch(`https://film-fusion-server.vercel.app/users`,{
                    method: 'PATCH',
                    headers: {
                     'content-type': 'application/json'

@@ -19,7 +19,7 @@ const UpdateMovie = () => {
         const updatedMovie = {title,genre,duration,releaseYear,rating,summary,poster}
         console.log(updatedMovie);
     
-        fetch(`http://localhost:5000/movies/${_id}`,{
+        fetch(`https://film-fusion-server.vercel.app/movies/${_id}`,{
           method: 'PUT',
           headers:{
             'content-type':'application/json'
