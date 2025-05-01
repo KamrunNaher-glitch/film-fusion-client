@@ -14,7 +14,7 @@ const AboutUs = () => {
 
                 {/* Text Section */}
                 <div className="text-center lg:text-left">
-                    <h1 className="text-4xl md:text-5xl font-bold text-primary">
+                    <h1 className="text-4xl md:text-5xl font-bold ">
                         About Film Fusion!
                     </h1>
                     <p className="py-6 text-gray-600 text-lg">
@@ -28,3 +28,4 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+

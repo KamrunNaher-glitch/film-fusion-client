@@ -12,6 +12,9 @@ import AuthProvider from './components/Providers/AuthProvider.jsx';
 import MovieDetail from './components/MovieDetail.jsx';
 import AboutUs from './components/AboutUs.jsx';
 import AllMovies from './components/AllMovies.jsx';
+import FeaturedMovies from './components/FeaturedMovies.jsx';
+import FavoriteMovie from './components/FavoriteMovie.jsx';
+import Users from './components/Users.jsx';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +33,14 @@ const router = createBrowserRouter([
       {
         path: "AllMovies",
         element: <AllMovies></AllMovies>
+      },
+      {
+        path: "FeatuedMovies",
+        element: <FeaturedMovies></FeaturedMovies>
+      },
+      {
+        path: "FavoriteMovie",
+        element: <FavoriteMovie></FavoriteMovie>
       },
       {
         path: "movieDetail/:id",
@@ -52,7 +63,13 @@ const router = createBrowserRouter([
       {
         path: "signUp",
         element: <SignUp />
+      },
+      {
+        path: "users",
+        element: <Users></Users>,
+        loader: () => fetch('http://localhost:5000/users')
       }
+
     ]
   }
 ]);
